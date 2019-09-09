@@ -90,8 +90,8 @@
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>-->
-                    <a href="/currency">Currency Calculator, Maryam PASSES</a>
-                    <h1>MARYAM PASSED HAHAHAHA HEHEHEH</h1>
+                    <a href="/currency">Currency Calculator</a>
+                  
                 </div>
             </div>
         </div>
