@@ -11,6 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+use Illuminate\Support\facades\Input;
+
+
+
+
+
+Route::get('currency', 'HomeController@ajaxRequest');
+
+Route::POST('currency', 'HomeController@calculateCurrency');
+
+Route::get('/', function() {
+return view('welcome');
 });
+
+
+
+
+
+
+
+
+Auth::routes();
