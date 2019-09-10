@@ -12,7 +12,8 @@ class HomeController extends Controller
 
     //XML contents converted to array to get currency conversion data
     private function getCurrencyData(){
-        $xml_string = file_get_contents("http://www.floatrates.com/daily/gbp.xml");
+        //$xml_string = file_get_contents("http://www.floatrates.com/daily/gbp.xml");
+        $xml_string = file_get_contents("http://www.floatrates.com/daily/fjd.xml"); //FIJI DOLLAR BASE CURRENCY
         
         $xml = new \simpleXMLElement($xml_string);
         $array = (array)$xml;
@@ -89,7 +90,8 @@ $this->validate($request, [
     {
 
 
-        $xml_string = file_get_contents("http://www.floatrates.com/daily/gbp.xml");
+        //$xml_string = file_get_contents("http://www.floatrates.com/daily/gbp.xml");
+         $xml_string = file_get_contents("http://www.floatrates.com/daily/fjd.xml");
       
         $xml = new \simpleXMLElement($xml_string);
 
